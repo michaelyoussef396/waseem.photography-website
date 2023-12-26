@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a {
+    color: #fff;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+/*header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.name {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #FF0000;
+}
+
+/*menu bar*/
+.menu-bar a {
+    font-size: 1.5rem;
+    margin: 3.5rem;
+    transition: 0.4s ease;
+}
+
+.menu-bar a:hover {
+    color: #FF0000;
+}
+
+
+/*social media*/
+
+
+.facebook i {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    object-fit: cover;
+    font-size: 2.5rem;
+}
+
+
+.instagram i {
+    width: 5%;
+    height: 5%;
+    object-fit: cover;
+    font-size: 2.5rem;
+}
+
+.pinterest i{
+    width: 5%;
+    height: 5%;
+    object-fit: cover;
+    font-size: 2.5rem;
+}
+
+.snapchat i {
+    width: 5%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+    font-size: 2.5rem;
+}
+
+section {
+    padding: 10rem 10%;
+    min-height: 100vh;
+}
+
+/*home*/
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-bio h3 {
+    font-size: 2.5rem;
+
+}
+
+span {
+    color: #FF0000;
+}
+
+.home-bio h1 {
+    font-size: 3.5rem;
+    line-height: 1.4;
+}
+
+.home-bio p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #FF0000;
+    margin: 2rem 0;
+    padding: 1rem 2.5rem;
+    border-radius: 1.3rem;
+    color: #000;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    color: #FF0000;
+    background: #000;
+    box-shadow: 0 0 1rem #FF0000;
+}
+
+/*skills*/
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10rem 10%;
+    min-height: 200vh;
+    text-align: center;
+}
+
+.services-items {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    width: 100%;
+}
+
+.services-card {
+    background: #FF0000;
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.services-card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .services-items {
+        grid-template-columns: 1fr;
+    }
+}
+
+.heading h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+    font-weight: 600;
+
+    margin-bottom: 2rem;
+}
+
+/*work section*/
+
+.work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.work-items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr); 
+    grid-gap: 10px; 
+  }
+  
+  .work-item {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /*contact section*/
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+form {
+    display: grid;
+    row-gap: 1rem;
+}
+
+form input,
+form textarea {
+    width: 700px; /* Adjust the width as necessary */
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff; /* White text color */
+    background: #1e141e; /* Slightly brighter black for input backgrounds */
+    border: 1px solid #ff0000; /* Red border */
+    border-radius: 1rem;
+    resize: none; /* For textarea */
+}
+
+.section {
+    padding: 2rem 10%;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000; /* Black background for consistency */
+}
+
+hr {
+    margin: 1rem 0;
+    width: 100%; /* Adjusted to not exceed the container width */
+    border: 0; /* Removes the border */
+    border-bottom: thin solid #ff0000; /* Red bottom border */
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
